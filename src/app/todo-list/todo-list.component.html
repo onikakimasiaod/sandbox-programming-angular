@@ -1,0 +1,5 @@
+<div class="container">
+  {{ message }}<br>
+  <input type="text" id="new-task-id" #task />
+  <button (click)="newTaskEvent(task.value)">Add new task</button>
+</div>

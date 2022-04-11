@@ -7,10 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sandbox-programming-angular';
-  data = "data";
-  list:Array<string> = [];
+  messageValue = `Message from the @Input. Write a new task in the input below: `;
+  toDoList:Array<string> = ['Task1','Task2','Task3'];
 
-  addTrial(newTrial: string){
-    this.list.push(newTrial);
+  addNewTask(task: string){
+    this.toDoList.push(task);
+    console.log(this.toDoList);
   }
 }

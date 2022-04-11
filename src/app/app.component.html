@@ -1,4 +1,8 @@
 <div class="parent">
-  <h2>Parent component</h2>
-  <app-trials [trial]="data"></app-trials>
+  <h2>TODO LIST</h2>
+  <app-todo-list [message]="messageValue" (addNewTaskEvent)="addNewTask($event)"></app-todo-list>
+
+  <ul>
+    <li *ngFor="let toDo of toDoList ">{{ toDo }}</li>
+  </ul>
 </div>
